@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avalie sua mentoria - Avançado</title>
+
+    <link rel="stylesheet" href="stage03-2.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="page">
+      <header>
+      <h1>avalie a sua mentoria</h1>
+      <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+
+      <img 
+      id="balao" 
+      src="img/Vector.png" 
+      alt="balao com cinco estrelas">
+      </header>
+      <div class="fieldset-top">
+        <legend>Informações pessoais</legend>
+      </div>
+        
+      <form id="my-form">
+        <fieldset>
+          <div class="input-wrapper">
+            <div class="col-2">
+              <div class="input-wrapper">
+                <label for="name">Nome</label>
+                <input 
+                type="text"
+                id="name"
+                required />
+              </div>
+
+             <div class="input-wrapper">
+                <label for="surname">Sobrenome</label>
+                  <input 
+                  type="text"
+                 id="surname"
+                required />
+              </div>          
+            </div>  
+        
+          <div class="input-wrapper">
+            <label for="event-email">E-mail<span>(Digite um e-mail válido)</span></label>
+            <input type="email"
+            id="event-email"
+            required />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="fieldset-wrapper">            
+            <legend>informações do mentor</legend>
+  
+              <div class="input-wrapper">
+                <label for="advisor">Selecione quem foi seu mentor</label>
+                <select 
+                  name="" 
+                  id="">          
+                  <option value="advisor00">Selecione seu mentor </option>
+                  <option value="advisor01">Mentor 01</option>
+                  <option value="advisor02">Mentor 02</option>
+                  <option value="advisor03">Mentor 03</option>
+                  <option value="advisor04">Mentor 04</option>
+                </select>
+              </div>
+  
+              <div class="input-wrapper">
+                <label for="feedback">Feedback sobre o mentor</label>
+                <textarea
+                  id="feedback" 
+                  required
+                  maxlength="300"/>
+                </textarea>
+              </div>
+  
+              <div class="checkbox-wrapper">
+                <input 
+                type="checkbox" 
+                id="doubt"/>
+                <label for="doubt">Todas as minhas dúvidas foram esclarecidas durante a mentoria</label>
+              </div>
+          </div>
+        </fieldset>    
+
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Agendando a próxima mentoria</legend>
+          
+            <div class="col-3">
+              <div class="input-wrapper">
+                <label for="event-date"> Data <span>(DD/MM/AAAA)</span></label>
+                <input 
+                type="date"
+                id="event-date"
+                required />
+              </div>
+            
+              <div class="input-wrapper">
+                <label for="event-begin"> Das</label>
+               <input 
+                type="time"
+                id="event-begin"
+                required />
+              </div>
+            
+              <div class="input-wrapper">
+                <label for="event-end"> Até</label>
+                <input 
+                type="time"
+                id="event-end"
+                required />
+              </div>    
+            </div>
+          </div>
+        </fieldset>
+
+        <footer>
+          <button
+            class="button" 
+            type="submit" 
+            form="my-form">
+            Agendar Mentoria
+          </button>
+        </footer>
+      </form>
+    </div>   
+  </body>
+</html>

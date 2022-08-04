@@ -1,0 +1,271 @@
+/* Cores do layout
+  header #051933;
+  informações pessoais button #093366;
+ */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body, input, select, textarea {
+  /* font-family: 'Bebas Neue', cursive; */
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, p, button {
+  color: white;
+}
+
+h1, legend, button {
+  font-family: 'Bebas Neue', cursive;  
+}
+
+body {
+  background: #BFD7E4;
+}
+
+body::before {
+  content: '';
+  width: 100%;
+  height: 465px;
+
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  background: #051933;
+}
+
+.page {
+  width: 750px;
+  margin: auto;
+}
+
+header {
+  background:#051933;
+  width: 401px;
+  height: 204px;
+
+  margin: 96px auto 32px ;
+}
+
+header h1 {
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+
+}
+
+header p  {
+  font-size: 16px;
+  line-height: 24px;
+
+  height: 46px;
+  width: 391px;
+}
+
+header #balao {
+  padding: 2px 0 0 63px;
+}
+
+fieldset {
+  border: none;
+}
+
+.fieldset-top {
+  width: 750px;
+  height: 133px;
+
+  font-size: 24px;
+  line-height: 34px;
+
+  color: white;
+
+  background-color: #093366;
+
+  border-radius: 20px 20px 0 0;
+
+  padding: 50px 275px;
+}
+
+form  {
+  background: white;
+  min-height: 300px;
+  border: none;
+  border-radius: 0 0 20px 20px;
+
+  padding: 32px 64px;
+
+  display: flex;
+  flex-direction: column;
+  
+  gap: 30px;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+fieldset legend {
+  color: #093366;
+
+  font-size: 25px;
+  line-height: 34px;
+  
+  border-bottom: 1px solid #e6e6f0;
+
+  padding-bottom: 8px;
+  
+  text-align: center;
+}
+
+.col-2 {
+  display: flex;
+  
+  gap: 22px;  
+}
+
+.col-2 input  {
+  width: 300px;
+
+  margin-bottom: 18px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label, .checkbox-wrapper label {
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #4e4958;
+
+  margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+  margin-left: 5px;
+  font-size: 12px;
+
+  line-height: 20px;
+
+  color: #c1bccc;
+}
+
+.input-wrapper label span:hover {
+  color:#5d536f
+}
+
+.input-wrapper input, select, textarea {
+  background: #fafafc;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+
+  height: 56px;
+  padding: 0 24px;
+
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #211e29;
+}
+
+.input-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+    
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: right 24px top 50%;
+}
+
+.input-wrapper textarea {
+  height: 165px;
+}
+
+.checkbox-wrapper {
+  position: relative;
+}
+
+.checkbox-wrapper label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+}
+
+.checkbox-wrapper input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+
+  opacity: 0;
+}
+
+.checkbox-wrapper label::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+}
+
+.checkbox-wrapper input:checked + label::before {
+  background-image:  url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+}
+
+.checkbox-wrapper input:focus + label::before {
+  outline: 2px solid black;
+}
+
+.col-3 {
+  display: flex;
+}
+
+.col-3 > div:nth-child(1) {
+  padding-right: 32px;
+  width: 100%;
+}
+
+.col-3 > div:nth-child(2) {
+  padding-right: 10px;
+}
+
+footer .button {
+  font-size: 20px;
+  line-height: 26px;
+  
+  background: #093366;
+  
+  margin-top: 64px;
+  margin-bottom: 64;
+  
+  width: 622px;
+  height: 51px;
+  
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+footer .button:hover {
+  background: #4379bc;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+textarea:invalid {
+  border: 2px solid red;
+}
