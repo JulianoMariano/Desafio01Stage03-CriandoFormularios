@@ -1,4 +1,4 @@
-# Desafio 01/ 03 Stage 03: Criando Formulários - Rocketseat Explorer 🚀
+# Desafio 01 de 03 Stage 03: Criando Formulários - Rocketseat Explorer 🚀
 
 Estes desafios utilizam todos os conceitos que foram vistos na primeira parte do stage 03 - Formulários, validações e customizações do programa explorer da RocketSeat🚀
 
