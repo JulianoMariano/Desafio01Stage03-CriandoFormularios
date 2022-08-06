@@ -11,4 +11,4 @@ O layout das 2 aplicações poderão ser vistas abaixo.
 No segundo desafio - Formulário Avançado, devemos aplicar conceitos avançados sobre formularios, contento, estilização própria, campos select, checkbox, uma imagem centralizada no header e o button dentro do form;
 ![image](https://user-images.githubusercontent.com/107228378/183115868-7aa3a1a9-6e92-4cb3-9319-36c348252a91.png)
 
-O objetivo final pode ser concluído!!!
+Os objetivos finais foram concluídos!!
